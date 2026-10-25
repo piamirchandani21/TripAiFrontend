@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trip Planner - TripAI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">✈</span>
+                Trip<span>AI</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#features">Features</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="index.html#destinations">Destinations</a>
+            </nav>
+
+            <div class="nav-buttons">
+                <a href="#" class="login-btn">Login</a>
+            </div>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PLANNER ================= -->
+
+    <main>
+
+        <section class="planner-page">
+
+            <div class="container planner-container">
+
+                <!-- PAGE HEADER -->
+
+                <div class="planner-header">
+
+                    <span class="section-label">
+                        ✨ AI TRIP PLANNER
+                    </span>
+
+                    <h1>
+                        Let's Plan Your
+                        <span>Perfect Trip</span>
+                    </h1>
+
+                    <p>
+                        Tell us a little about your travel plans and
+                        TripAI will create a personalized itinerary for you.
+                    </p>
+
+                </div>
+
+
+                <!-- FORM -->
+
+                <form id="tripForm" class="planner-form">
+
+                    <!-- DESTINATION -->
+
+                    <div class="form-section">
+
+                        <div class="form-section-title">
+                            <div class="form-icon">📍</div>
+
+                            <div>
+                                <h2>Where do you want to go?</h2>
+
+                                <p>
+                                    Choose your dream destination.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="destination">
+                                Destination
+                            </label>
+
+                            <input
+                                type="text"
+                                id="destination"
+                                name="destination"
+                                placeholder="e.g. Goa, Manali, Paris..."
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DATES -->
+
+                    <div class="form-section">
+
+                        <div class="form-section-title">
+
+                            <div class="form-icon">📅</div>
+
+                            <div>
+                                <h2>When are you travelling?</h2>
+
+                                <p>
+                                    Select your travel dates.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="startDate">
+                                    Start Date
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="startDate"
+                                    name="startDate"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="endDate">
+                                    End Date
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="endDate"
+                                    name="endDate"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TRAVELERS -->
+
+                    <div class="form-section">
+
+                        <div class="form-section-title">
+
+                            <div class="form-icon">👥</div>
+
+                            <div>
+                                <h2>Who's travelling?</h2>
+
+                                <p>
+                                    Tell us how many people are joining.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="travelers">
+                                Number of Travelers
+                            </label>
+
+                            <input
+                                type="number"
+                                id="travelers"
+                                name="travelers"
+                                min="1"
+                                max="50"
+                                value="1"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="travel-type">
+
+                            <p class="input-label">
+                                Travel Type
+                            </p>
+
+                            <div class="choice-grid">
+
+                                <label class="choice-card">
+
+                                    <input
+                                        type="radio"
+                                        name="travelType"
+                                        value="solo"
+                                        checked
+                                    >
+
+                                    <span class="choice-content">
+                                        <span class="choice-icon">🧍</span>
+                                        <strong>Solo</strong>
+                                    </span>
+
+                                </label>
+
+
+                                <label class="choice-card">
+
+                                    <input
+                                        type="radio"
+                                        name="travelType"
+                                        value="couple"
+                                    >
+
+                                    <span class="choice-content">
+                                        <span class="choice-icon">👫</span>
+                                        <strong>Couple</strong>
+                                    </span>
+
+                                </label>
+
+
+                                <label class="choice-card">
+
+                                    <input
+                                        type="radio"
+                                        name="travelType"
+                                        value="family"
+                                    >
+
+                                    <span class="choice-content">
+                                        <span class="choice-icon">👨‍👩‍👧</span>
+                                        <strong>Family</strong>
+                                    </span>
+
+                                </label>
+
+
+                                <label class="choice-card">
+
+                                    <input
+                                        type="radio"
+                                        name="travelType"
+                                        value="friends"
+                                    >
+
+                                    <span class="choice-content">
+                                        <span class="choice-icon">👯</span>
+                                        <strong>Friends</strong>
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BUDGET -->
+
+                    <div class="form-section">
+
+                        <div class="form-section-title">
+
+                            <div class="form-icon">💰</div>
+
+                            <div>
+                                <h2>What's your budget?</h2>
+
+                                <p>
+                                    We'll help you plan within your budget.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="budget-input">
+
+                            <span>₹</span>
+
+                            <input
+                                type="number"
+                                id="budget"
+                                name="budget"
+                                placeholder="20,000"
+                                min="1"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="budget-options">
+
+                            <button type="button" data-budget="10000">
+                                ₹10K
+                            </button>
+
+                            <button type="button" data-budget="20000">
+                                ₹20K
+                            </button>
+
+                            <button type="button" data-budget="50000">
+                                ₹50K
+                            </button>
+
+                            <button type="button" data-budget="100000">
+                                ₹1L+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- INTERESTS -->
+
+                    <div class="form-section">
+
+                        <div class="form-section-title">
+
+                            <div class="form-icon">❤️</div>
+
+                            <div>
+                                <h2>What do you enjoy?</h2>
+
+                                <p>
+                                    Select everything that sounds like you.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="interest-grid">
+
+                            <label class="interest-card">
+                                <input type="checkbox" name="interests" value="beaches">
+                                <span>🏖️</span>
+                                <strong>Beaches</strong>
+                            </label>
+
+
+                            <label class="interest-card">
+                                <input type="checkbox" name="interests" value="adventure">
+                                <span>🧗</span>
+                                <strong>Adventure</strong>
+                            </label>
+
+
+                            <label class="interest-card">
+                                <input type="checkbox" name="interests" value="food">
+                                <span>🍜</span>
+                                <strong>Food</strong>
+                            </label>
+
+
+                            <label class="interest-card">
+                                <input type="checkbox" name="interests" value="history">
+                                <span>🏛️</span>
+                                <strong>History</strong>
+                            </label>
+
+
+                            <label class="interest-card">
+                                <input type="checkbox" name="interests" value="nature">
+                                <span>🌿</span>
+                                <strong>Nature</strong>
+                            </label>
+
+
+                            <label class="interest-card">
+                                <input type="checkbox" name="interests" value="shopping">
+                                <span>🛍️</span>
+                                <strong>Shopping</strong>
+                            </label>
+
+
+                            <label class="interest-card">
+                                <input type="checkbox" name="interests" value="nightlife">
+                                <span>🌃</span>
+                                <strong>Nightlife</strong>
+                            </label>
+
+
+                            <label class="interest-card">
+                                <input type="checkbox" name="interests" value="culture">
+                                <span>🎭</span>
+                                <strong>Culture</strong>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+
+                    <div class="planner-submit">
+
+                        <button
+                            type="submit"
+                            class="generate-btn"
+                        >
+                            ✨ Generate My Trip
+                        </button>
+
+                        <p>
+                            TripAI will create a personalized itinerary
+                            based on your preferences.
+                        </p>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 TripAI. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

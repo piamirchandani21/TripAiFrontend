@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TripAI - Your AI Travel Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">✈</span>
+                Trip<span>AI</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#destinations">Destinations</a>
+            </nav>
+
+            <div class="nav-buttons">
+                <a href="#" class="login-btn">Login</a>
+                <a href="planner.html" class="primary-btn">Plan My Trip</a>
+            </div>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <div class="ai-badge">
+                        ✨ AI-Powered Travel Planning
+                    </div>
+
+                    <h1>
+                        Plan Your Perfect Trip
+                        <span>With AI</span>
+                    </h1>
+
+                    <p>
+                        Tell us where you want to go, your budget, interests,
+                        and travel dates. TripAI creates a personalized
+                        itinerary just for you.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="planner.html" class="primary-btn hero-btn">✨ Plan My Trip</a>
+
+                        <a href="#how-it-works" class="secondary-btn">
+                            How It Works →
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+
+                        <div>
+                            <strong>10K+</strong>
+                            <span>Trips Planned</span>
+                        </div>
+
+                        <div>
+                            <strong>50+</strong>
+                            <span>Destinations</span>
+                        </div>
+
+                        <div>
+                            <strong>4.9/5</strong>
+                            <span>User Rating</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="hero-card">
+
+                        <div class="card-header">
+                            <span>✨ Your AI Itinerary</span>
+                            <span>•••</span>
+                        </div>
+
+                        <div class="trip-preview">
+
+                            <div class="trip-image">
+                                🏝️
+                            </div>
+
+                            <div>
+                                <h3>Goa Adventure</h3>
+                                <p>5 Days • 3 Travelers</p>
+                            </div>
+
+                        </div>
+
+                        <div class="itinerary-item">
+                            <div class="day-number">01</div>
+
+                            <div>
+                                <strong>Explore North Goa</strong>
+                                <p>Beaches • Food • Sightseeing</p>
+                            </div>
+                        </div>
+
+                        <div class="itinerary-item">
+                            <div class="day-number">02</div>
+
+                            <div>
+                                <strong>Adventure Day</strong>
+                                <p>Water Sports • Sunset • Nightlife</p>
+                            </div>
+                        </div>
+
+                        <div class="itinerary-item">
+                            <div class="day-number">03</div>
+
+                            <div>
+                                <strong>South Goa</strong>
+                                <p>Nature • Culture • Relaxation</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features section" id="features">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">WHY TRIPAI?</span>
+
+                    <h2>
+                        Travel Planning,
+                        <span>Made Smarter</span>
+                    </h2>
+
+                    <p>
+                        Everything you need to plan an unforgettable journey,
+                        powered by artificial intelligence.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">🤖</div>
+
+                        <h3>AI-Powered Planning</h3>
+
+                        <p>
+                            Get personalized travel itineraries based on
+                            your interests, budget and preferences.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">💰</div>
+
+                        <h3>Smart Budgeting</h3>
+
+                        <p>
+                            Plan your trip while keeping your spending
+                            within your desired budget.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">🗺️</div>
+
+                        <h3>Personalized Routes</h3>
+
+                        <p>
+                            Discover places and activities that match
+                            your travel style.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">⚡</div>
+
+                        <h3>Plan in Seconds</h3>
+
+                        <p>
+                            Stop spending hours researching. Let TripAI
+                            create your itinerary instantly.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section class="how-it-works section" id="how-it-works">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">HOW IT WORKS</span>
+
+                    <h2>
+                        Your Trip in
+                        <span>3 Simple Steps</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="steps">
+
+                    <div class="step">
+
+                        <div class="step-number">01</div>
+
+                        <div class="step-icon">📍</div>
+
+                        <h3>Tell Us Your Plans</h3>
+
+                        <p>
+                            Enter your destination, dates, budget and
+                            travel preferences.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-line"></div>
+
+
+                    <div class="step">
+
+                        <div class="step-number">02</div>
+
+                        <div class="step-icon">✨</div>
+
+                        <h3>Let AI Plan</h3>
+
+                        <p>
+                            TripAI analyzes your preferences and creates
+                            a personalized itinerary.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step-line"></div>
+
+
+                    <div class="step">
+
+                        <div class="step-number">03</div>
+
+                        <div class="step-icon">🎒</div>
+
+                        <h3>Enjoy Your Journey</h3>
+
+                        <p>
+                            Follow your itinerary and enjoy a stress-free
+                            travel experience.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DESTINATIONS ================= -->
+
+        <section class="destinations section" id="destinations">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">EXPLORE</span>
+
+                    <h2>
+                        Popular
+                        <span>Destinations</span>
+                    </h2>
+
+                    <p>
+                        Get inspired for your next adventure.
+                    </p>
+
+                </div>
+
+
+                <div class="destination-grid">
+
+                    <article class="destination-card">
+
+                        <div class="destination-image goa">
+                            🏖️
+                        </div>
+
+                        <div class="destination-info">
+                            <h3>Goa</h3>
+                            <p>Beaches • Adventure • Nightlife</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="destination-card">
+
+                        <div class="destination-image manali">
+                            🏔️
+                        </div>
+
+                        <div class="destination-info">
+                            <h3>Manali</h3>
+                            <p>Mountains • Nature • Adventure</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="destination-card">
+
+                        <div class="destination-image jaipur">
+                            🕌
+                        </div>
+
+                        <div class="destination-info">
+                            <h3>Jaipur</h3>
+                            <p>Culture • History • Food</p>
+                        </div>
+
+                    </article>
+
+
+                    <article class="destination-card">
+
+                        <div class="destination-image kerala">
+                            🌴
+                        </div>
+
+                        <div class="destination-info">
+                            <h3>Kerala</h3>
+                            <p>Nature • Relaxation • Culture</p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="cta" id="planner">
+
+            <div class="container cta-content">
+
+                <div>
+                    <span class="section-label">READY TO TRAVEL?</span>
+
+                    <h2>
+                        Your Next Adventure
+                        Starts Here.
+                    </h2>
+
+                    <p>
+                        Let TripAI create a personalized travel plan
+                        made just for you.
+                    </p>
+                </div>
+
+                <a href="planner.html" class="cta-button">✨ Start Planning</a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+                    <span class="logo-icon">✈</span>
+                    Trip<span>AI</span>
+                </a>
+
+                <p>
+                    Your intelligent travel companion.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <div>
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#planner">Trip Planner</a>
+                    <a href="#destinations">Destinations</a>
+                </div>
+
+                <div>
+                    <h4>Company</h4>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 TripAI. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
